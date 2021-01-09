@@ -17,22 +17,20 @@ public class LevelLoader : MonoBehaviour
             LoadNextLevel();
             levelFinished = false;
         }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            LoadCredits();
+        }
     }
 
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-
-    IEnumerator LoadLevel(int levelIndex)
+    public void LoadCredits()
     {
-        //Play animation
-        transition.SetTrigger("Start");
-
-        //Wait
-        yield return new WaitForSeconds(transitionTime);
-
-        //Load Scene
-        SceneManager.LoadScene(levelIndex);
+        SceneManager.LoadScene("Credits");
     }
 }
+
+    

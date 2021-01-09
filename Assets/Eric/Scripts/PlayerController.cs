@@ -28,12 +28,12 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetAxis("Horizontal") > 0)
             {
-                sr.flipX = false;
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * -1, transform.localScale.y, 0);
                 rb.AddForce(new Vector2(accel, 0));
             }
             else 
             {
-                sr.flipX = true;
+                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x) * 1, transform.localScale.y, 0);
                 rb.AddForce(new Vector2(-accel, 0));
             }
         }
@@ -66,14 +66,14 @@ public class PlayerController : MonoBehaviour
     public void die()
     {
         //transform.position = respawnPoint.transform.position;
-        sr.flipX = false;
+        //sr.flipX = false;
     }
     
     //Collisions-----------------------------------------------------------------
 
     private void OnTriggerStay2D(Collider2D collision) 
     {
-        if (collision.tag == "Ground" || collision.tag == "Box")
+        if (collision.tag == "Ground")
         {
             grounded = true;
             //animator.SetBool("IsJumping", false);
@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision) 
     {
 
-    }
+    } 
 
     private void OnTriggerExit2D(Collider2D collision)
     {
