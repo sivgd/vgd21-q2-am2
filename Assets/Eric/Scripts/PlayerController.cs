@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 400f;
     public bool grounded;
     //public GameObject respawnPoint;
-    //public Animator animator;
+    public Animator animator;
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 
@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 
     void Update() 
     {
-        //animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         //animator.SetFloat("SpeedV", Mathf.Abs(rb.velocity.y));
 
         //Jumping----------------------------------------------------------------

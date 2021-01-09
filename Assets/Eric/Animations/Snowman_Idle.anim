@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Snowman_Attack
+  m_Name: Snowman_Idle
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,14 +21,6 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300000, guid: 1ded8dc7bee74634eaadb8e3b9057770, type: 3}
-    - time: 0.1
-      value: {fileID: 21300000, guid: e492d9b6b85fa3f4eb3c364fe434cfcf, type: 3}
-    - time: 0.8
-      value: {fileID: 21300000, guid: 1ded8dc7bee74634eaadb8e3b9057770, type: 3}
-    - time: 0.9
-      value: {fileID: 21300000, guid: f2fed6a7a913e174095f26c0fdc0263c, type: 3}
-    - time: 1
-      value: {fileID: 21300000, guid: a96d5805e64ea74448113035ac1c21b4, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -49,16 +41,12 @@ AnimationClip:
       isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 1ded8dc7bee74634eaadb8e3b9057770, type: 3}
-    - {fileID: 21300000, guid: e492d9b6b85fa3f4eb3c364fe434cfcf, type: 3}
-    - {fileID: 21300000, guid: 1ded8dc7bee74634eaadb8e3b9057770, type: 3}
-    - {fileID: 21300000, guid: f2fed6a7a913e174095f26c0fdc0263c, type: 3}
-    - {fileID: 21300000, guid: a96d5805e64ea74448113035ac1c21b4, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1
+    m_StopTime: 0.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
