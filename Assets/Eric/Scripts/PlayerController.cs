@@ -63,6 +63,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void hit() 
+    {
+        sr.color = Color.red;
+    }
+
     public void die()
     {
         //transform.position = respawnPoint.transform.position;
@@ -83,7 +88,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision) 
     {
-
+        if (collision.tag == "Enemy")
+        {
+            hit();
+        }
     } 
 
     private void OnTriggerExit2D(Collider2D collision)
