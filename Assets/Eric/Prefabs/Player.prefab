@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   accel: 8
   speedCap: 5
-  jumpForce: 300
+  jumpForce: 500
   grounded: 0
   animator: {fileID: 3781401923252973190}
 --- !u!50 &3781401923252973185
